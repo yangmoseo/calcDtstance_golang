@@ -15,4 +15,5 @@ func CalcDis(originLat, originLon, destLat, destLon float64) float64 {
 	h := hsin(destLatRad-originLatRad) + math.Cos(originLatRad)*math.Cos(destLatRad)*hsin(destLonRad-originLonRad)
 
 	return 2 * r * math.Asin(math.Sqrt(h))
+
 }

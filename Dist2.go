@@ -18,6 +18,7 @@ func (arr *Coord) String() string {
 func (arr *Coord) Set(s string) error {
 	*arr = strings.Split(s, ",")
 	return nil
+
 }
 
 // paring string to float64
